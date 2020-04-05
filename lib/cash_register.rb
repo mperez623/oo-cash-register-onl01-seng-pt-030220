@@ -14,7 +14,6 @@ class CashRegister
     @total += price*quantity
     quantity.times { self.items << title }
     last_transaction = [title, price, quantity]
-    binding.pry
   end
   
   def apply_discount 
@@ -30,7 +29,7 @@ class CashRegister
   
   def void_last_transaction
     @total -= self.last_transaction
-    
+    binding.pry
   end
   
   
