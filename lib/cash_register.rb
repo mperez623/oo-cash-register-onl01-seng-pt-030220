@@ -22,14 +22,14 @@ class CashRegister
       else 
         discount_amt = @total * @discount/100.0
         @total -= discount_amt
-        "After the discount, the total comes to $#{@total.to_i}."
+        "After the discount, the total comes to $#{@total}."
       end
   end
   
   
   def void_last_transaction
     @total -= self.last_transaction
-    binding.pry
+    
   end
   
   
