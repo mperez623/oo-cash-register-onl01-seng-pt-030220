@@ -26,11 +26,6 @@ class CashRegister
       end
   end
   
-  def items 
-    @items
-     binding.pry
-  end
-  
   
   def void_last_transaction
     @total
