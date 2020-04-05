@@ -29,8 +29,6 @@ class CashRegister
   
   def void_last_transaction
     @total -= self.last_transaction[1] * self.last_transaction[2]
-    # self.last_transaction[2] do 
-    # # binding.pry
   end
   
   
