@@ -30,7 +30,7 @@ class CashRegister
   def void_last_transaction
     @total -= self.last_transaction[1]
     self.last_transaction.delete_at(2)
-    binding.pry
+    # binding.pry
   end
   
   
