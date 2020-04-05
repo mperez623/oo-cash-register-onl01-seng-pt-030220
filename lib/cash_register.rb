@@ -31,7 +31,6 @@ class CashRegister
     @total -= self.last_transaction[1]
     self.last_transaction[2] 
     binding.pry
-    end
   end
   
   
